@@ -1,9 +1,73 @@
----
-layout: responsive
-name: Schedule
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ScaleConf -
+        
+            Schedule
+        
+        </title>
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Quicksand:300,400,700' rel='stylesheet' type='text/css' />
+</head>
 
-<div class="row white-background">
+<body>
+    <!-- <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container center-text">
+            <p class="navbar-text"><strong>2014 is over! Thanks for coming... </strong></p></div>
+    </div> -->
+    
+	<div class="container">
+    	<!-- logo -->
+    	<a href="/index.html"><img src="/img/branding/logo.png" class="img-responsive" alt="ScaleConf" /></a>
+    	<!-- logo end -->
+        <div class="row">
+        <div class="masthead">
+            <ul class="nav nav-justified">
+              
+                  
+                  
+              <li class="inactive"><a href="/">Home</a></li>
+              
+                  
+                  
+              <li class="inactive"><a href="/speakers">Speakers</a></li>
+              
+                  
+                  
+              <li class="inactive"><a href="/schedule">Schedule</a></li>
+              
+                  
+                  
+              <li class="inactive"><a href="/workshops">Workshops</a></li>
+              
+                  
+                  
+              <li class="inactive"><a href="/purchase">Tickets</a></li>
+              
+                  
+                  
+              <li class="inactive"><a href="/venue">Venue</a></li>
+              
+                  
+                  
+              <li class="inactive"><a href="/sponsors">Sponsors</a></li>
+              
+                  
+                  
+              <li class="inactive"><a href="/about">About</a></li>
+              
+                  
+                  
+              <li class="inactive"><a href="/videos">Videos</a></li>
+              
+  
+            </ul>
+      	</div>
+        </div>
+        
+        <div class="row white-background">
     <div class="col-md-12">
         <h1>Conference Schedule</h1>
     </div>
@@ -34,9 +98,9 @@ name: Schedule
         </a>
         </p>
 
-        {% for day in site.programme %}
+        
 
-        <h2>{{ day.day | upcase }}</h2>
+        <h2>WEDNESDAY EVENING, 9TH APRIL</h2>
 
         <table class="table table-bordered">
             <thead>
@@ -47,45 +111,625 @@ name: Schedule
                 </tr>
             </thead>
             <tbody>
-                {% for event in day.schedule %}
-                {% if event.speaker != nil %}
-                <tr class='speaker'>
-                    <td style="width:15%">{{ event.time | upcase }}</td>
-                    <td style="width:15%">
-                        <img src="/img/layout/bullet.png" />
-                        <span class="speaker">
-                            {% if event.speaker != 'tbc' %}
-                            <a href="/speakers/{{ event.speaker }}">
-                                {{ site.speakers[event.speaker].name }}
-                            </a>
-                            {% else %}
-                            TBC
-                            {% endif %}
-                        </span>
-                    </td>
-                    <td style="width:70%">
-                        {% if event.speaker != 'tbc' %}
-                            {{ site.speakers[event.speaker].title }}
-                        {% else %}
-                            Coming soon...
-                        {% endif %}
-                    </td>
-                </tr>
-                {% else %}
+                
+                
                 <tr>
-                    <td style="width:15%">{{ event.time | upcase }}</td>
+                    <td style="width:15%">5:00 PM - 9:30 PM</td>
                     <td style="width:15%">
-                        {{ event.event }}
+                        Pre-conference drinks
                     </td>
                     <td style="width:70%">
-                        {{ event.description }}
+                        Come join us for pre-conference drinks at <a href="http://www.wembleytap.co.za/">the Wembley Tap</a> in Gardens, sponsored by <a href="http://scaleconf.org/sponsors/key_connections">Key Connections</a>. This will be a chance to socialise and network with the speakers, organisers, and fellow conference attendees
                     </td>
                 </tr>
-                {% endif %}
-                {% endfor %}
+                
+                
             </tbody>
         </table>
 
-        {% endfor %}
+        
+
+        <h2>THURSDAY, 10TH APRIL</h2>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width:15%">TIME</th>
+                    <th style="width:15%">EVENT</th>
+                    <th style="width:70%">DESCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                
+                <tr>
+                    <td style="width:15%">8:00 AM - 9:00 AM</td>
+                    <td style="width:15%">
+                        Registration
+                    </td>
+                    <td style="width:70%">
+                        Tea and coffee will be served
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">9:00 AM - 9:15 AM</td>
+                    <td style="width:15%">
+                        Opening
+                    </td>
+                    <td style="width:70%">
+                        A quick welcome and introduction to the conference before we get going
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">9:30 AM - 10:15 AM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/niklas_gustavsson">
+                                Niklas Gustavsson
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Optimizing playback at Spotify
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">10:15 AM - 10:25 AM</td>
+                    <td style="width:15%">
+                        Break
+                    </td>
+                    <td style="width:70%">
+                        A quick changeover & pee-break
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">10:25 AM - 11:10 AM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/wim_godden">
+                                Wim Godden
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Caching and Tuning fun for high scalability
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">11:10 AM - 11:30 AM</td>
+                    <td style="width:15%">
+                        Break
+                    </td>
+                    <td style="width:70%">
+                        Mid-morning tea & coffee with scones and biscuits
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">11:30 AM - 12:15 PM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/beat_schwegler_2014">
+                                Beat Schwegler
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Scaling push notifications to millions of devices
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">12:15 PM - 1:30 PM</td>
+                    <td style="width:15%">
+                        Lunch
+                    </td>
+                    <td style="width:70%">
+                        A buffet lunch provided by Moyo and some time to chill in the Botanical Gardens
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">1:30 PM - 2:15 PM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/krzysztof_debski">
+                                Krzysztof Debski
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Let's build a solid base for a scale.
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">2:15 PM - 2:30 PM</td>
+                    <td style="width:15%">
+                        Break
+                    </td>
+                    <td style="width:70%">
+                        Afternoon tea & coffee with biscuits
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">2:30 PM - 3:15 PM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/simon_and_ben">
+                                Simon Cross and Ben Adlard
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Scaling Happiness
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">3:15 PM - 3:35 PM</td>
+                    <td style="width:15%">
+                        Break
+                    </td>
+                    <td style="width:70%">
+                        A quick changeover & pee-break
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">3:35 PM - 4:20 PM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/clinton_gormley">
+                                Clinton Gormley
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Scaling real time search and analytics with Elasticsearch
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">4:20 PM - 5:05 PM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/craig_robinson">
+                                Craig Robinson
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Street View Scale
+                        
+                    </td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+
+        
+
+        <h2>THURSDAY EVENING, 10TH APRIL</h2>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width:15%">TIME</th>
+                    <th style="width:15%">EVENT</th>
+                    <th style="width:70%">DESCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                
+                <tr>
+                    <td style="width:15%">5:30 PM - 10:00 PM</td>
+                    <td style="width:15%">
+                        Party
+                    </td>
+                    <td style="width:70%">
+                        Join us at <a href="http://forries.co.za/">the Forrester's Arms</a> for food and drinks, sponsored by <a href="http://scaleconf.org/sponsors/amazon">Amazon Web Services</a>.
+                    </td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+
+        
+
+        <h2>FRIDAY, 11TH APRIL</h2>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width:15%">TIME</th>
+                    <th style="width:15%">EVENT</th>
+                    <th style="width:70%">DESCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                
+                <tr>
+                    <td style="width:15%">8:30 AM - 9:00 AM</td>
+                    <td style="width:15%">
+                        Arrival
+                    </td>
+                    <td style="width:70%">
+                        Tea and coffee will be served
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">9:15 AM - 10:00 AM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/shai_rosenfeld">
+                                Shai Rosenfeld
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Such Blocking, Very Concurrency, Wow
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">10:00 AM - 10:10 AM</td>
+                    <td style="width:15%">
+                        Break
+                    </td>
+                    <td style="width:70%">
+                        A quick changeover & pee-break
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">10:10 AM - 10:55 AM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/deon_moolman">
+                                Deon Moolman
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            On a scale of one
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">10:55 AM - 11:25 AM</td>
+                    <td style="width:15%">
+                        Break
+                    </td>
+                    <td style="width:70%">
+                        Mid-morning tea & coffee with scones and biscuits
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">11:25 AM - 12:10 PM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/chris_bray">
+                                Chris Bray
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Looking back on “Look Back” videos
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">12:15 PM - 1:30 PM</td>
+                    <td style="width:15%">
+                        Lunch
+                    </td>
+                    <td style="width:70%">
+                        A buffet lunch provided by Moyo and some time to chill in the Botanical Gardens
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">1:30 PM - 2:15 PM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/dustin_whittle">
+                                Dustin Whittle
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Performance Testing Crash Course
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">2:15 PM - 2:35 PM</td>
+                    <td style="width:15%">
+                        Break
+                    </td>
+                    <td style="width:70%">
+                        A quick changeover & pee-break
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">2:35 PM - 3:20 PM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/zabil_and_simba">
+                                Zabil Maliackal and Simba Nyatsanga
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Offloading the Rendering of your View to your Clients
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">3:20 PM - 3:40 PM</td>
+                    <td style="width:15%">
+                        Break
+                    </td>
+                    <td style="width:70%">
+                        Afternoon tea & coffee with biscuits
+                    </td>
+                </tr>
+                
+                
+                
+                <tr class='speaker'>
+                    <td style="width:15%">3:40 PM - 4:25 PM</td>
+                    <td style="width:15%">
+                        <img src="/img/layout/bullet.png" />
+                        <span class="speaker">
+                            
+                            <a href="/speakers/aslam_khan">
+                                Aslam Khan
+                            </a>
+                            
+                        </span>
+                    </td>
+                    <td style="width:70%">
+                        
+                            Puppet for Human Beings (not!)
+                        
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td style="width:15%">4:25 PM - 4:40 PM</td>
+                    <td style="width:15%">
+                        Closing
+                    </td>
+                    <td style="width:70%">
+                        Final remarks
+                    </td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+
+        
+
+        <h2>FRIDAY EVENING, 11TH APRIL</h2>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width:15%">TIME</th>
+                    <th style="width:15%">EVENT</th>
+                    <th style="width:70%">DESCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                
+                <tr>
+                    <td style="width:15%">5:00 PM - 11:00 PM</td>
+                    <td style="width:15%">
+                        Party
+                    </td>
+                    <td style="width:70%">
+                        Join us at the post-conference party at <a href="http://riverclub.co.za/">Player's Restaurant, at the River Club</a> for food and drinks, sponsored by <a href="http://scaleconf.org/sponsors/facebook">Facebook</a>.
+
+                    </td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+
+        
     </div>
 </div>
+
+    	
+        
+		<div class="row footer">
+        <div class="col-lg-2">
+            </div>
+			<div class="col-lg-2">
+			
+            <dl>
+            <dt>Contact us</dt>
+			<dd><a href="mailto:info@scaleconf.org">info@scaleconf.org</a></dd>
+			<dd><a href="mailto:payments@scaleconf.org">payments@scaleconf.org</a></dd>
+            </dl>
+            
+            </div>
+            <div class="col-lg-2">
+            
+            <dl>
+            <dt>Follow Us</dt>
+			<dd><a href="http://lanyrd.com/2014/scaleconf/">Lanyrd</a></dd>
+			<dd><a href="https://twitter.com/scaleconf">Twitter</a></dd>
+            <dd><a href="https://www.facebook.com/scaleconf">Facebook</a></dd>
+            </dl>
+            
+            </div>
+            <div class="col-lg-2">
+            
+            <dl>
+            <dt>Github</dt>
+            <dd><a href="https://github.com/scaleconf/scaleconf.github.com">Pull requests on <br />
+this site are welcome</a></dd>
+			</dl>
+            
+            </div>
+            <div class="col-lg-2">
+			
+                <dl class="dl-horizontal">
+  <dt><a href="http://www.siliconcape.com/" target="_blank"><img src="/img/partners/siliconcape-partner.png" /></a></dt>
+  <dd>Proudly part of the <a href="http://www.siliconcape.com/" target="_blank">
+           	Silicon Cape Initiative</a></dd>
+</dl>
+     </li>       
+ </ul>            
+           
+			</div>
+
+
+            
+
+            <div class="col-lg-2">
+            </div>
+            
+        </div>
+        <div class="row copyright">
+            <div class="col-lg-12">&copy; SCALECONF 2014</div>
+        </div>
+	</div>
+<script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-26903495-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+</body>
+</html>
